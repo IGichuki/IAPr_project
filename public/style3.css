@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width:100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(c.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+
+}
+
+.header img{
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    text-align: right;
+    flex: 1;
+}
+nav ul a{
+    text-align: right;
+    list-style: none;
+   cursor: pointer;
+   color: orange;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-decoration: none;
+   
+}
+.nav-links ul li  {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 25px 15px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{  
+    width: 100%;
+}
+.nav-links ul li:hover{
+    color: olivedrab;
+}
+.home{
+    text-align: center;
+    margin-top: 150px;
+}
+.home h1{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+.home p{
+    margin-top: 26px;
+    color:white;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    
+    padding:.8rem 3rem;
+    border:.2rem solid green;
+    color: white;
+    background:green;
+    
+}
+.btn:hover{
+    background: orange;
+    color: white;
+}
+/*---------------------------CAMPUSES-------------------*/
+.campuses{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.campuses h2{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: olivedrab;
+}
+.campuses p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+     justify-content: space-between;
+}
+.campus-col{
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden; 
+}
+.row img{
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 350px;
+    
+}
+/*-----------------------COURSES--------------------------*/
+.course{
+    text-align: center;
+    margin-top: 50px;
+}
+.course h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: olivedrab;
+}
+.course p{
+    margin-top: 10px;
+}
+.course-col{
+    border-radius: 10px;
+    background: rgb(233, 191, 112);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    
+}
+.course-col h3{
+    padding-top: 20px;
+    text-align: center;
+}
+.course-col p{
+    padding-left: 15px;
+    text-align: left;
+}
+/*---------------------------FACILITIES--------------------*/
+.facility{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.facility h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: olivedrab;
+}
+.facility p{
+    margin-top: 10px;
+}
+.facility-col{
+    margin: auto;
+    padding-left: 10px;
+    
+}
+.facility-col p{
+    text-align: left;
+    margin-left: 20px;
+}
+.facility-col  h3{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------TESTIMONIALS---------------------*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.testimonials h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: olivedrab;
+}
+.testimonials-col{
+   flex-basis: 41%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 25px;
+    background: rgb(214, 177, 109);
+    display: flex;
+}
+.testimonials-col img{
+    border-radius:50%;
+    height: 100px;
+    padding-right: 20px;
+}
+.testimonials-col h3{
+    padding-top: 10px;
+   
+}
+/*------------------------CONTACT US------------------------*/
+.contact{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(contact1.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    height: 240px;
+    border-radius: 10px;
+    
+}
+.contact h2{
+    padding-top: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+
+/*-------------------------ABOUT US------------------------*/
+.about{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.about h2{
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+}
+.about p{
+    margin-bottom: 20px;
+}
+.icons{
+    margin-bottom: 50px;
+    font-size: 21px;
+}
+.fa:hover {
+    color: orange;
+}
+/*----------------about us page------------------------------*/
+.sub-header{
+    width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(images/mara11.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+ img{
+    width: 100px;
+    height: 100px;
+    margin-left:20px;
+    text-align: left;
+    padding-top: 10px;
+    }
+.sub-header h1{
+    margin-top: 10px;
+    color: white;
+    font-size: 35px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+}
+
+.about-col h1{
+    font-size: 28px;
+    text-align: center;
+}
+.about-col p{
+    margin-top: 10px;
+    text-align: left;
+}
+.her{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: orange;
+    color: white;
+    text-decoration: none;
+}
+.her:hover{
+    color: orange;
+    background:transparent;
+}
+/*-----------------contact us page-------------------*/
+.contact1{
+    width: 900px;
+    margin-top: 35px;
+    margin-left: 370px;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(contact1.jpg);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    height: 240px;
+    border-radius: 10px;
+    
+    
+}
+.contact1 h2{
+    padding-top: 40px;
+    color: white;
+    font-size: 40px;
+}
+/* -----------------------------blog---------------------- */
+.blog{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.blog h2{
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    margin-left: 10px;
+ 
+}
+.blog-left{
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family:  'Times New Roman';
+    flex-basis: 65%;
+}
+.blog-right{
+    flex-basis: 32%;
+
+}
+.blog-right span{
+    display: inline-table;
+    padding-left: 10px;
+    
+}
+.blog-right h2{
+    color: white;
+    background: orange;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-top: 9px;
+    text-align: center;
+    font-size: 20px;
+    height: 35px;
+}
+.blog-right div{
+   display: flex;
+   justify-content: space-between;
+    align-items:center ;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.comment-box{
+    border: 1px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: center;
+    font-size: 22px;
+}
+.comment-form input, .comment-form textarea{
+     width: 100%;
+     padding: 10px;
+     margin: 15px;
+     box-sizing: border-box;
+     border: none;
+     outline: none;
+     background: rgb(236, 235, 235);
+
+}
+ .sa{
+     margin-left: 16px;
+ }
+
+ /*------------------------CONTACT US PAGE-------------------*/
+ .sub-header h2{
+     color: white;
+     font-size: 24px;
+     text-align: center;
+     padding-top: 100px;
+ }
+ .location{
+     width: 90%;
+     margin: auto;
+     padding: 80px 0;
+ }
+ .location iframe{
+     width: 3000px;
+ }
+ .contact-us{
+     width: 80%;
+     margin: auto;
+ }
+ .contact-col{
+     flex-basis: 42%;
+     margin-bottom: 30px;
+ }
+ .contact-col div{
+     display: flex;
+     align-items: center;
+     margin-bottom: 30px;
+     
+ }
+ .contact-col div .fa{
+     font-size: 28px;
+     color: orange;
+     margin: 10px;
+     margin-right: 30px;
+ }
+ .contact-col div h5{
+     font-weight: bold;
+     font-size: 20px;
+     margin-bottom: 5px;
+ }
+ .contact-col div p{
+     padding: 0;
+ }
+
+ .contact-form{
+    
+     padding-top: -20px;
+     padding-left: 10px;
+     width: 800px;
+     
+ }
+ 
+ .contact-form input, .contact-form textarea{
+     width: 100%;
+     display: flex;
+     outline: none;
+     padding: 15px;
+     border: 1px solid orange;
+     margin-bottom: 17px;
+ }
+
+ :root{
+    --orange:rgb(5, 82, 5);
+  }
+
+ .btns{
+    display: inline-block;
+    margin-top: 1rem;
+    background:green;
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid reen;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  .btns:hover{
+    background:rgba(255, 165, 0,.2);
+    color:green;
+  }
+
+
+
+
+  
+
+  table{
+    margin: 1 auto;
+    font-size:large;
+    border: 3px solid;
+    float: centre;
+border-top: 2em;
+
+
+}
+
+
+td{
+    border: 0.5px solid;
+    text-align: center;
+}
+th{
+    background-color:orange;
+    font-size: large;
+    border: 1px solid;
+}
+
+td{
+    font-weight: lighter;
+}
+th, td {
+    border-style:dashed ;
+  }
+  
+  
+  .btn2{
+    display: inline-block;
+    margin-top: 1rem;
+    
+    padding:.4rem 1.5rem;
+    border:.2rem solid green;
+    color: white;
+    background:green;
+font: 200;
+    
+}
+.btn2:hover{
+    background: orange;
+    color: white;
+}
+
+ 
