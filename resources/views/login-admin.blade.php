@@ -32,7 +32,7 @@
                </div>
                <div class="btn">
                   <div class="inner"></div>
-                  <input type="submit" name="submit" value="submit" class="btn" formaction="{{url('index-admin')}}">
+                  <input type="submit" name="submit" value="submit" class="btn" formaction="{{url('index-2')}}">
                </div>
                <div class="signup-link">
                   Not a member? <a href="registration_admin">Signup</a><a href="./" class="ca">back</a>

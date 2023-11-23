@@ -54,9 +54,8 @@ Route::get('book_form', function () {
     Route::POST('send');
 });
 
-Route::get('book', function () {
-    return view('book');
-});
+Route::view('book','book');
+Route::POST('book',[bookController::class,'book']);
 
 Route::get('book2', function () {
     return view('book2');
@@ -101,12 +100,21 @@ Route::get('mombasa', function () {
 Route::get('review', function () {
     return view('review');
 });
+Route::get('settings', function () {
+    return view('settings');
+});
 
 Route::get('riftvalley', function () {
     return view('riftvalley');
 });
 Route::get('nakuru', function () {
     return view('nakuru');
+});
+Route::get('userdetails', function () {
+    return view('userdetails');
+});
+Route::get('appointments', function () {
+    return view('appointments');
 });
 Route::get('connect', function () {
     return view('connect');
@@ -119,6 +127,21 @@ Route::POST('registration_admin',[usersController::class,'registration_admin']);
 
 Route::view('signup','signup');
 Route::POST('signup',[usernameController::class,'signup']);
+
+Route::get('index-2', function () {
+    return view('index-2');
+});
+Route::get('edit-profile', function () {
+    return view('edit-profile');
+});
+Route::get('calendar', function () {
+    return view('calendar');
+});
+Route::get('profile', function () {
+    return view('profile');
+});
+
+
 
 
 

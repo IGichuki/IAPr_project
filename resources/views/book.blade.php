@@ -47,7 +47,7 @@
 
    <h1 class="heading-title">book your trip!</h1>
 
-   <form action="book_form" method="post" class="book-form">
+   <form action="book" method="post" class="book-form">
       @csrf
 
       <div class="flex">
