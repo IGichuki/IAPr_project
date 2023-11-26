@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\usersController;
 use App\http\Controllers\usernameController;
+use App\http\Controllers\packagesController;
+use App\http\Controllers\bookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,8 +56,7 @@ Route::get('book_form', function () {
     Route::POST('send');
 });
 
-Route::view('book','book');
-Route::POST('book',[bookController::class,'book']);
+
 
 Route::get('book2', function () {
     return view('book2');
@@ -110,12 +111,26 @@ Route::get('riftvalley', function () {
 Route::get('nakuru', function () {
     return view('nakuru');
 });
-Route::get('userdetails', function () {
-    return view('userdetails');
-});
-Route::get('appointments', function () {
-    return view('appointments');
-});
+// Route::get('add-users', function () {
+//     return view('add-users');
+// });
+Route::view('add_users','add_users');
+// the first add user should be the page name and the second is the file name
+
+Route::POST('add_users',[usernameController::class,'add_users']);
+
+Route::get('userdetails',[usernameController::class,'showusers']);
+
+Route::view('book','book');
+Route::POST('book',[bookController::class,'book']);
+
+Route::get('packages',[packagesController::class,'showpackages']);
+Route::view('add_packages','add_packages');
+Route::POST('add_packages',[packagesController::class,'addpackages']);
+
+// Route::get('add-packages', function () {
+//     return view('add-packages');
+// });
 Route::get('connect', function () {
     return view('connect');
 });
@@ -140,6 +155,12 @@ Route::get('calendar', function () {
 Route::get('profile', function () {
     return view('profile');
 });
+// Route::get('schedule', function () {
+//     return view('schedule');
+// });
+Route::get('schedule',[bookController::class,'showbook']);
+// Route::view('schedule','schedule');
+
 
 
 

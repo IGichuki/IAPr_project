@@ -145,7 +145,7 @@
                             <a href="userdetails"><i class="fa fa-user"></i> <span>customers</span></a>
                         </li>
                         <li>
-                            <a href="appointments"><i class="fa fa-calendar"></i> <span>packages</span></a>
+                            <a href="packages"><i class="fa fa-calendar"></i> <span>packages</span></a>
                         </li>
                         <li>
                             <a href="schedule"><i class="fa fa-calendar-check-o"></i> <span>booking Schedule</span></a>

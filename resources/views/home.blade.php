@@ -33,7 +33,7 @@
         <a href="#services">services</a>
         <a href="login-admin">admin</a>
         <a href="#contact">contact</a>
-        <a href="logout">logout</a>
+        <a href="login">logout</a>
     </nav>
 
     <div class="icons">

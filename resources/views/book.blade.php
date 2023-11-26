@@ -85,16 +85,13 @@
          </div>
          <div class="inputBox">
             <span>payment method</span>
-            <select name="PaymentMethod">               
-               <option value="m-pesa" selected>m-pesa</option>
-               <option value="cash on delivery" >cash on delivery</option>
-               <option value="credit cart">credit cart</option>
-            </select>
+            <input type="texr" name="paymentmethod" value="ie:mpesa,cash,visa">
+            
          </div>
          
       </div>
 
-      <input type="submit" value="submit" class="btn" name="send">
+      <input type="submit" value="submit" class="btn" name="submit">
 
    </form>
 

@@ -147,7 +147,7 @@
                             <a href="userdetails"><i class="fa fa-user"></i> <span>customers</span></a>
                         </li>
                         <li>
-                            <a href="appointments"><i class="fa fa-calendar"></i> <span>packages</span></a>
+                            <a href="packages"><i class="fa fa-calendar"></i> <span>packages</span></a>
                         </li>
                         <li>
                             <a href="schedule"><i class="fa fa-calendar-check-o"></i> <span>booking Schedule</span></a>
@@ -302,7 +302,7 @@
                         <h4 class="page-title">USER DETAILS</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
-                        <a href="add-patient" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add user</a>
+                        <a href="add_users" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add user</a>
                     </div>
                 </div>
 				<div class="row">
@@ -311,18 +311,30 @@
 							<table class="table table-border table-striped custom-table datatable mb-0">
 								<thead>
 									<tr>
+										<td>ID</td>
 										<th>Name</th>
-										<th>Age</th>
-										<th>Address</th>
-										<th>Phone</th>
-										<th>Email</th>
+										<th>EMAIL</th>
+										<th>PASSWORD</th>
+										<th>PHONE</th>
 										<th class="text-right">Action</th>
 									</tr>
 								</thead>
 								<tbody>
                                     <td>
-									/*imput retrieving details*/
-</td>
+
+									@foreach($userdetails as $userdetails)
+                                    <tr>
+										<td>{{$userdetails['id']}}</td>
+										<th>{{$userdetails['name']}}</th>
+										<th>{{$userdetails['email']}}</th>
+										<th>{{$userdetails['password']}}</th>
+										<th>{{$userdetails['phone']}}</th>
+										
+									</tr>
+
+
+                                    @endforeach
+                                    </td>
 								</tbody>
                                 
 							</table>
